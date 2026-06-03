@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Project1</title>
+</head>
+<header>
+<nav class="body navbar navbar-expand-lg shadow-sm py-3">
+    <div class="container">
+
+        <!-- Left -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+    <img src="images/Mark.png" alt="Logo" class="logo-img me-2">
+    HomePro
+</a>
+
+        <!-- Mobile Toggle -->
+        <!-- <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <!-- Mobile Toggle -->
+<button class="navbar-toggler text-white border-0" type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu"
+        aria-controls="mobileMenu">
+
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+        <!-- Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <!-- Center -->
+            <ul class="navbar-nav position-absolute start-50 translate-middle-x  gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OurBlog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+           <div class="ms-auto d-flex align-items-center service-item">
+    <span class="service-dot me-2"></span>
+    <a class="nav-link p-0 m-0" href="#">24 Hour Service</a>
+</div>
+
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-end custom-offcanvas text-white" tabindex="-1" id="mobileMenu">
+
+    <!-- HEADER -->
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <!-- BODY -->
+    <div class="offcanvas-body d-flex flex-column">
+
+        <ul class="navbar-nav gap-3">
+            <li><a class="nav-link text-white" href="#">AboutUs</a></li>
+            <li><a class="nav-link text-white" href="#">Services</a></li>
+            <li><a class="nav-link text-white" href="#">OurBlog</a></li>
+            <li><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+
+        <!-- bottom item -->
+        <div class="mt-auto d-flex align-items-center pt-4">
+            <span class="service-dot me-2"></span>
+            <a class="nav-link text-white p-0 m-0" href="#">24 Hour Service</a>
+        </div>
+
+    </div>
+</div>
+</div>
+</header>
+
+<body>
+ 
+    <main role="main">
+        
+      <section class="hero-section d-flex align-items-center">
+    <div class="container-fluid px-3">
+        <div class="row align-items-center">
+
+            <!-- first image -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <img src="images/Image 1.png" class="img-fluid hero-img" alt="">
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-lg-6 text-center text-white">
+                
+                <div class="small text-light mb-2">
+                    Maintenances • Repairs • Improvements
+                </div>
+
+                <h1 class="fw-bold display-5">
+                    Need improvement<br>
+                    or repair your home?<br>
+                    we can help!
+                </h1>
+
+                <div class="mt-3 d-flex justify-content-center gap-3 text-info small ">
+                    <span>✓ Free Quotes</span>
+                    <span>✓ 100% Commitment-Free</span>
+                </div>
+
+               <a href="#" class="btn mb-5 btn-info mt-4 px-2.4 py-2 rounded-pill d-inline-flex align-items-center btn-with-icon ">
+   Call Us Now
+                <img src="images/Icon + Container.png" class="btn-icon ms-2 " alt="">
+  
+</a>
+
+                <!-- icons -->
+               <div class="features row mt-5 text-white">
+
+    <div class="col-6 col-md-3 feature-item">
+        <img src="images/check.png" alt="">
+        <span>Satisfaction<br>Guarantee</span>
+    </div>
+
+    <div class="col-6 col-md-3 feature-item">
+        <img src="images/time.png" alt="">
+        <span>24H<br>Availability</span>
+    </div>
+
+    <div class="col-6 col-md-3 feature-item">
+        <img src="images/loc.png" alt="">
+        <span>Local US<br>Professional</span>
+    </div>
+
+    <div class="col-6 col-md-3 feature-item">
+        <img src="images/cal.png" alt="">
+        <span>Flexible<br>Appointments</span>
+    </div>
+
+</div>
+
+            </div>
+
+            <!-- second image -->
+              
+            <div class="col-lg-3 d-none d-lg-block">
+                <img src="images/Image 2.png" class="img-fluid hero-img" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 order-2 order-lg-1">
+                <h3 class="section-title">Professional for your home services</h3>
+                <p class="section-text">
+                    You need help for home care? We are home care professionals
+                    focused in the US region. We provide several services that
+                    support home services.
+                </p>
+
+                <div class="service-list">
+                    <div class="service-check">Repair and Installation</div>
+                    <div class="service-check">Plumbing</div>
+                    <div class="service-check">Maintenance</div>
+                    <div class="service-check">Budget-friendly</div>
+                    <div class="service-check">Home Security Services</div>
+                    <div class="service-check">Eco-friendly solutions</div>
+                </div>
+
+                <div class="service-callout">
+                    <span>We already 24 hours fast services to help you.</span>
+                    <span>You can contact us at <a href="tel:8886175894">(888) 617-5894</a></span>
+                </div>
+            </div>
+
+            <div class="col-lg-7 order-1 order-lg-2">
+                <div class="services-image-wrap">
+                    <img src="images/workers.png" class="services-image" alt="Two home service professionals working on a roof">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nextservices-section">
+    <div class="container">
+        <div class="services-heading">
+                <h3 class="section-title">Our Services</h3>
+                <p class="section-text">
+                    You have problems with leaking pipes, broken tiles, lost keys or want 
+                    to tidy up the trees around you, of course you need our help!
+                </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic-Plumbing-Filled.png" alt="">
+                </div>
+               <h5 style="font-weight: bold;">Plumbing services</h5>
+                <p>Drain pipe leaking, pipe clogged, replace the pipeline</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Roof_Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Roofing repair</h5>
+                <p>Roof leaks, tile replacement, roof cleaning and maintenance</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Wall-Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Mold Removal</h5>
+                <p>Removing and cleaning mildew, Restoration and Prevention</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Wood-Tree-Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Tree Trimming</h5>
+                <p>Trimming and cleaning, Deadwood removal, Tree shaping</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Repair_Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Appliance Repair</h5>
+                <p>Repair of washing machines, refrigerators, Air conditioner, etc</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Bathroom-Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Bathroom Remodeling</h5>
+                <p>Design and Consulting, installation, Repairing, tile repair</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Ic_Door-Filled.png" alt="">
+                </div>
+                <h5 style="font-weight: bold;">Locksmith</h5>
+                <p>Lock Installation and Repair, Duplication, Lock Rekeying</p>
+            </div>
+
+            <div class="more-services">
+                <h5 style="font-weight: bold; color:white;">More services</h5>
+                <p>You can tell us what you need and we can help!</p>
+                <a href="#" class="more-services-btn">Call Us Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="guarantee-section">
+    <!--  px-5 make it wider  -->
+      <div class="containerfluid px-5">
+        <div class="guarantee-panel">
+            <div class="guarantee-top">
+                <h3>Fast, Friendly, and Satisfaction Guarantee</h3>
+                <p>
+                    No matter how big or small your work is, whether it's for the interior or
+                    exterior of your home, we are ready to serve and help you solve your
+                    home problems.
+                </p>
+            </div>
+
+            <div class="guarantee-divider"></div>
+<!-- nb1 -->
+            <div class="guarantee-grid">
+                <div class="guarantee-item">
+                    <img  src="images/Ic_Guarantee-Filled.png" alt="">
+                    <div >
+                        <h5>Satisfaction Guarantee</h5>
+                        <p>You don't need to worry about scams or our performance results. Our company has been verified and strives for optimal results.</p>
+                    </div>
+                </div>
+<!-- nb2 -->
+                <div class="guarantee-item">
+                   <img src="images/Ic_Quotes-Filled.png" alt="">
+                    <div>
+                        <h5>Free Quotes</h5>
+                        <p>Get personalized cost estimates without any obligation. Experience transparency and peace of mind as you explore our service.</p>
+                    </div>
+                </div>
+<!-- nb3 -->
+                <div class="guarantee-item">
+                    <img src="images/Ic_Local-Filled.png" alt="">
+                    <div>
+                        <h5>Local Professionals</h5>
+                        <p>Our services cover the Nationwide, US area, including urban, suburban, and rural locations for both long and short term maintenance.</p>
+                    </div>
+                </div>
+<!-- nb4 -->
+                <div class="guarantee-item">
+                    <img src="images/Ic_24H-Filled.png" alt="">
+                    <div>
+                        <h5>Fast 24-Hour Service</h5>
+                        <p>Need fast handling for repairs to drains, leaks or something else? Our experts are available anytime to help you solve the problem.</p>
+                    </div>
+                </div>
+<!-- nb5 -->
+                <div class="guarantee-item">
+                    <img src="images/Ic_Calendar-Filled.png" alt="">
+                    <div>
+                        <h5>Flexible Appointments</h5>
+                        <p>We offer convenient appointment times that can accommodate your busy schedule, day or night, 7 days a week.</p>
+                    </div>
+                </div>
+<!-- nb6 -->
+                <div class="guarantee-item">
+                      <img src="images/Ic_Commitment-Filled.png" alt="">
+                    <div>
+                        <h5>100% Commitment-Free</h5>
+                        <p>You are free to ask us about the problems you are facing. We offer a no-commitment approach to put your mind at ease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="how-image-wrap">
+                    <img src="images/man with hand.png" class="how-image" alt="HomePro professional ready to help">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="how-content">
+                    <h3>How HomePro works?</h3>
+
+                    <div class="how-steps">
+                        <div class="how-step">
+                            <span class="how-number">1.</span>
+                            <h5>Call us anytime 24/7</h5>
+                            <p>You can contact us directly, we will quickly put you in touch with our home care professionals who are ready anytime.</p>
+                        </div>
+
+                        <div class="how-step">
+                            <span class="how-number">2.</span>
+                            <h5>Schedule Service</h5>
+                            <p>After connecting your call, our home care experts will answer your questions and provide flexible appointment times.</p>
+                        </div>
+
+                        <div class="how-step">
+                            <span class="how-number">3.</span>
+                            <h5>Your request is completed</h5>
+                            <p>Once your technician arrives, he will diagnose the problem and provide an estimate. If you decide to continue, the technician will get to work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section">
+    <div class="container">
+        <div class="reviews-wrap">
+            <h3>Here our original reviews from trusted platform</h3>
+
+            <div class="trustpilot-brand">
+                <span class="trustpilot-star">★</span>
+                <span>Trustpilot</span>
+
+            </div>
+            <div class="reviews-divider"></div>
+
+            <div class="review-slider">
+                <button class="review-arrow review-arrow-prev" type="button" aria-label="Previous review">‹</button>
+
+                <div class="review-content">
+                    <p class="review-text">
+                        Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                    </p>
+
+                    <div class="review-author">
+                         <img class="girl-image" src="images/girl.png" alt="">
+                        <div>
+                            <h5>Kende Attila</h5>
+                            <div class="review-stars" aria-label="4 out of 5 stars">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span class="muted-star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="review-arrow review-arrow-next" type="button" aria-label="Next review">›</button>
+            </div>
+
+            <div class="review-dots" aria-label="Review slides">
+                <span class="active-dot"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="container">
+        <div class="blog-heading text-center">
+            <h3>Explore Insights in Our Blog</h3>
+            <p>Find lots of insights and information on our blog. Explore, learn, and get inspired today.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <article class="blog-card">
+                    <img src="images/Thumbnail.png" class="blog-image" alt="Smart home control screen">
+                    <div class="blog-date">19 Jan 2023</div>
+                    <h5>Understanding Smart Home Systems &amp; Maintenance</h5>
+                    <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions...</p>
+                    <div class="blog-tags">
+                        <span>Plumbing</span>
+                        <span>Architecture</span>
+                        <span>Maintenance</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="blog-card">
+                    <img src="images/Thumbnail (2).png" class="blog-image" alt="Workers repairing a roof">
+                    <div class="blog-date">19 Jan 2023</div>
+                    <h5>The Ultimate Guide to Home Repairs and Renovations</h5>
+                    <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions...</p>
+                    <div class="blog-tags">
+                        <span>Plumbing</span>
+                        <span>Architecture</span>
+                        <span>Maintenance</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="blog-card">
+                    <img src="images/Thumbnail (3).png" class="blog-image" alt="Open paint cans for kitchen refresh">
+                    <div class="blog-date">19 Jan 2023</div>
+                    <h5>Painting Techniques for a Kitchen Refresh</h5>
+                    <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions...</p>
+                    <div class="blog-tags">
+                        <span>Plumbing</span>
+                        <span>Architecture</span>
+                        <span>Maintenance</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="blog-more">
+            <a href="#">View More <span>›</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-4">
+                <div class="faq-intro">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Still need help? <a href="#">Get Help Now</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="accordion faq-accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                What is HomePro?
+                            </button>
+                        </h4>
+                        <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                Are the service providers on HomePro reliable and qualified?
+                            </button>
+                        </h4>
+                        <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes. HomePro works with service providers who are reviewed for experience, reliability, and service quality.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                What if I have an issue or complaint about a service provider?
+                            </button>
+                        </h4>
+                        <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact our support team, and we will help review the issue and guide you through the next steps.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                How are payments handled on HomePro?
+                            </button>
+                        </h4>
+                        <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Payment details are shared before service confirmation so you know the cost and process clearly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                How do I leave a review for a service provider?
+                            </button>
+                        </h4>
+                        <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                After your service is completed, you can leave a review from your booking or through the review link we send you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final-cta-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+                <div class="final-cta-content">
+                    <h2>Already to improve or repair your home? Let’s Talk!</h2>
+                    <div class="final-cta-checks">
+                        <span>✓ Free Quotes</span>
+                        <span>✓ 100% Commitment-Free</span>
+                    </div>
+                    <a href="#" class="final-cta-btn">
+                        Call Us Now
+                       <img src="images/Icon + Container.png" class="btn-icon ms-2 " alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="final-cta-image-wrap">
+                    <img src="images/mann.png" class="final-cta-image" alt="HomePro professional ready to repair your home">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="newsletter-box">
+            <div>
+                <h5>Stay Connected with Our Newsletter</h5>
+                <p>Subscribe to our newsletter to get more news, promo, or news services</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter email address" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="row footer-main gy-5">
+            <div class="col-lg-7 col-md-6">
+                <a class="footer-brand" href="#">
+                    <img src="images/Markwhite.png" alt="">
+                  <p>HomePro</p>  
+                </a>
+                <p class="footer-about">Home Pro is your premier destination for top-notch smart home service and repair.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt=""></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt=""></a>
+                    <a href="#" aria-label="Email"><img src="images/email.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6>Company</h6>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6>Legal</h6>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>©2026 HomePro. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
